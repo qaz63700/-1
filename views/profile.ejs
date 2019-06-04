@@ -1,0 +1,14 @@
+
+<% include _header %>
+<!-- 
+    参考变量currentUser来判断你的登陆状态。不过现在它总会是false状态
+ -->
+<% if ((currentUser) && (currentUser.id === user.id)) { %>
+    <a href="/edit" class="pull-right">修改你的备注</a>
+<% } %>
+<h1><%= user.name() %></h1>
+<h2>Joined on <%= user.createdAt %></h2>
+<% if (user.bio) { %>
+    <p><%= user.bio %></p>
+<% } %>
+<% include _footer %>
