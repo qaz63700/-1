@@ -1048,12 +1048,12 @@ For example:
 
 #### `src/setupTests.js`
 ```js
-const localStorageMock = {
+const localstorageMock = {
   getItem: jest.fn(),
   setItem: jest.fn(),
   clear: jest.fn()
 };
-global.localStorage = localStorageMock
+global.localStorage = localstorageMock
 ```
 
 ### Focusing and Excluding Tests
