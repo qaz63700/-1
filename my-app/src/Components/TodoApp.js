@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import AddTodo from './AddTodo';
+import TodoList from './TodoList';
+import Footer from './Footer';
 
-class TodoApp extends Component{
-    render(){
-        return(
-            <div>
-                <h1>Todos</h1>
-                <input type="text" placeholder="接下来做什么？"/>
-            </div>
-        )
-    }
-}
+import todos from '../store.js';
 
-export default  TodoApp;
+import 'todomvc-app-css/index.css';
+
+const TodoApp = () => (
+    <section className="todoapp">
+        <AddTodo/>
+        <TodoList todos={todos}/>
+        <Footer/>
+    </section>
+);
+
+export default TodoApp;
