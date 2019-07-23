@@ -6,7 +6,7 @@ const { SHOW_PARENT } = TreeSelect;
 
 const treeData = [
   {
-    title: 'Node1',
+    title: 'Node11',
     value: '0-0',
     key: '0-0',
     children:[
@@ -18,7 +18,7 @@ const treeData = [
     ],
   },
   {
-    title: 'Node2',
+    title: 'Node21',
     value: '0-1',
     key: '0-1',
     children: [
@@ -61,7 +61,7 @@ class Games extends Component {
       showCheckedStrategy: SHOW_PARENT,
       searchPlaceholder: 'Please select',
       style: {
-        width: 300,
+        width: 100,
       },
     };
     return <TreeSelect {...tProps} />;
