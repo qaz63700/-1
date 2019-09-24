@@ -9,7 +9,7 @@ const treeData = [
     title: 'Node11',
     value: '0-0',
     key: '0-0',
-    children: [
+    children:[
       {
         title: 'Child Node1',
         value: '0-0-0',
