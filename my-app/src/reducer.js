@@ -3,12 +3,12 @@ export const todos = (state = [], action) => {
         case 'ADD_TODO':
             return [
                 ...state,
-                {
-                    id: action.id,
-                    content: action.content,
-                    completed: false
-                }
+                todo(undefined, action)
             ];
+        case 'TOGGLE_TODO':
+            return state.map(t => {
+                return todo(t, action)
+            })
         default:
             return state;
     }
