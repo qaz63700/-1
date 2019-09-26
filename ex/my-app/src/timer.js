@@ -1,4 +1,6 @@
 import React from 'react';
+import LoginControl from './components/Greeting.js'
+import Page from './components/WarningBanner.js'
 class Welcome extends React.Component{
     render(){
         return <h1>hello,{ this.props.name}</h1>
@@ -38,8 +40,10 @@ function Tiemr(){
                 {new Date().toLocaleTimeString()}
                 
             </a>
+            <LoginControl />
             <Welcome name="Sara" />
             <Comment text={comment.text} />
+            <Page />
         </span>
     );
 }
