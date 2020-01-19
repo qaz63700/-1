@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html, body{
+  width: 100vW;
+  height: 100vh;
+  background-color: #f8f8f8;  
+}
